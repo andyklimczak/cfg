@@ -1,3 +1,5 @@
 xterm*loginShell: true
 xterm*background: #1A1A1A
 xterm*foreground: #00CC00
+xterm*cursorColor: #F5F5F5
+xterm*font: Inconsolata
