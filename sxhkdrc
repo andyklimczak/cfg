@@ -61,8 +61,8 @@ super + alt + shift + {h,j,k,l}
 super + {1-9}
 	bspc desktop -f {1-9}
 
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,window -d} ^{1-9,10}
+super + shift + {1-9}
+	bspc window -d {1-9}
 
 ~button1
 	bspc pointer -g focus
