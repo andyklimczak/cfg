@@ -15,3 +15,6 @@ set fish_theme robbyrussell
 . $fish_path/oh-my-fish.fish
 
 set fish_greeting ""
+alias vol="alsamixer"
+alias bat="acpi -i"
+alias wifi="nmtui"
