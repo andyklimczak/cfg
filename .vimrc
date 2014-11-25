@@ -3,9 +3,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
@@ -21,3 +23,11 @@ set hlsearch
 set nu
 set smartindent
 nmap \q :nohlsearch<CR>
+set si
+set ai
+set wrap
+set tabstop=2
+set shiftwidth=2 
+set expandtab
+set cursorline 
+hi CursorLine cterm=NONE
