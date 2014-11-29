@@ -31,3 +31,9 @@ set shiftwidth=2
 set expandtab
 set cursorline 
 hi CursorLine cterm=NONE
+set wmw=0
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
+let g:airline_powerline_fonts=1
