@@ -44,11 +44,13 @@ map <C-l> <C-W>l
 let g:airline_powerline_fonts=1
 set showcmd
 set laststatus=2
-set relativenumber
-au FocusLost * :set number
-au FocusGained * :set relativenumber
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
+if version >= 703
+  set relativenumber
+  au FocusLost * :set number
+  au FocusGained * :set relativenumber
+  autocmd InsertEnter * :set number
+  autocmd InsertLeave * :set relativenumber
+endif
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
