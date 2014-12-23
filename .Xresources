@@ -2,7 +2,7 @@ xterm*termName: xterm-256color
 xterm*loginShell: true
 !xterm*background: #1a1a1a
 !xterm*foreground: #00cc00
-xterm*faceName: Inconsolata for Powerline
+xterm*faceName: monoOne
 xterm*faceSize: 9
 
 !XTerm*faceName: Bitstream Vera Serif Mono
@@ -12,6 +12,10 @@ xterm*saveLines: 16384
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*eightBitInput: false
 
+URxvt.scrollBar: false
+URxvt.font: xft:monoOne:size=9,xft:DejaVu Sans Mono for Powerline:size=9
+URxvt.loginShell: true
+URxvt.letterSpace: -1
 !BLK Cursor
 #define _color0        #000d18
 #define _color8        #000d18
