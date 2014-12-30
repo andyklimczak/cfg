@@ -19,3 +19,4 @@ alias vol="alsamixer"
 alias bat="acpi -i"
 alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
+alias pakup="pak -Syu --aur"
