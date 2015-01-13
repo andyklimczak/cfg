@@ -16,6 +16,7 @@ endif
 colo xoria256
 syntax on
 nmap er :NERDTreeToggle<CR>
+nmap ef :NERDTreeFind<CR>
 set incsearch
 set ignorecase
 set smartcase
@@ -29,7 +30,7 @@ set wrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set cursorline 
+set cursorline
 set showmatch
 set mouse=a
 set wildmenu
@@ -68,8 +69,14 @@ let g:ctrlp_map='<c-f>'
 let g:ctrlp_max_height=30
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_match_window_reversed=0
-let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
+endif
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
+set autoread
+set clipboard=unnamed
+highlight ExtraWhitespace ctermbg=red guibg=red
