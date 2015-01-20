@@ -81,4 +81,6 @@ set autoread
 set clipboard=unnamed
 highlight ExtraWhitespace ctermbg=red guibg=red
 set pastetoggle=<F2>
-nmap <silent> ,/ :noglsearch<CR>
+nmap <silent> ./ :nohlsearch<CR>
+set visualbell
+set noerrorbells
