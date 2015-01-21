@@ -13,7 +13,7 @@ xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*eightBitInput: false
 
 URxvt.scrollBar: false
-URxvt.font: xft:monoOne:size=9,xft:DejaVu Sans Mono for Powerline:size=9
+URxvt.font: xft:monoOne:size=9
 URxvt.loginShell: true
 URxvt.letterSpace: -1
 !BLK Cursor
