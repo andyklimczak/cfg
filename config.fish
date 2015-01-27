@@ -14,7 +14,12 @@ set fish_theme robbyrussell
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
+
 set fish_greeting ""
+set -x EDITOR "vim"
 alias vol="alsamixer"
 alias bat="acpi -i"
 alias wifi="nmtui"

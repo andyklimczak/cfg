@@ -8,6 +8,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
+
+
+
 call vundle#end()
 filetype plugin indent on
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
@@ -84,3 +87,4 @@ set pastetoggle=<F2>
 nmap <silent> ./ :nohlsearch<CR>
 set visualbell
 set noerrorbells
+imap jk <Esc>
