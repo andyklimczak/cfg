@@ -14,10 +14,6 @@ set fish_theme robbyrussell
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
-
 set fish_greeting ""
 set -x EDITOR "vim"
 alias vol="alsamixer"
@@ -26,3 +22,4 @@ alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
 alias brewup="brew update; brew upgrade"
+alias yumup="yum -y update"
