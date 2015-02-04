@@ -8,16 +8,15 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
-
-
-
+Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 filetype plugin indent on
+syntax on
+colo xoria256
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
   set t_Co=256
 endif
-colo xoria256
-syntax on
+let g:mapleader=","
 nmap er :NERDTreeToggle<CR>
 nmap ef :NERDTreeFind<CR>
 set incsearch
@@ -88,3 +87,10 @@ nmap <silent> ./ :nohlsearch<CR>
 set visualbell
 set noerrorbells
 imap jk <Esc>
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
