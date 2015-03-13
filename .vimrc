@@ -9,6 +9,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-ragtag'
 call vundle#end()
 filetype plugin indent on
 syntax on
