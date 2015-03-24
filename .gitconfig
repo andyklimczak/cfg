@@ -7,8 +7,8 @@
   c = commit -m
   a = add
   p = pull --rebase --prune
-  pushup = push --set-upstream origin
-  pusho = push origin
+  pup = push --set-upstream origin
+  po = push origin
   s = status
   d = diff
   b = branch
