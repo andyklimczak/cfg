@@ -19,3 +19,5 @@
   f = fetch -v -all
   bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs -r git branch -d; }; f"
   r = rebase
+  bd = branch -D
+  wipe = !git checkout -f @$ && git clean -df
