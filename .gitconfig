@@ -16,7 +16,7 @@
   lf = log --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)%an%C(reset)%n ''          %C(bold magenta)%s%C(reset) %C(white)%b%C(reset)'
   l = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   ds = diff --staged
-  f = fetch -v -all
+  f = fetch -v --all
   bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs -r git branch -d; }; f"
   r = rebase
   bd = branch -D
