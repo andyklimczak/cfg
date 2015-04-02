@@ -20,5 +20,6 @@
   bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs -r git branch -d; }; f"
   r = rebase
   bd = branch -D
-  wipe = !git checkout -f && git clean -df
+  wipeall = !git checkout -f && git clean -df
   bl = for-each-ref --sort=-committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09"
+  wipe = !git checkout -- . && git clean -df
