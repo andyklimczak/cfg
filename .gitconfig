@@ -4,7 +4,7 @@
 [alias]
 	co = checkout
   cob = checkout -b
-  c = commit -m
+  c = commit
   a = add
   p = pull --rebase --prune
   pup = push --set-upstream origin
@@ -24,3 +24,5 @@
   bl = for-each-ref --sort=-committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09"
   wipe = !git checkout -- . && git clean -df
   dlast = diff HEAD^..HEAD
+  repoclean = !git count-objects -v && git gc --aggressive && git prune && git fsck --full && git count-objects -v
+  cm = commit -m
