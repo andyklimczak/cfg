@@ -26,3 +26,4 @@
   dlast = diff HEAD^..HEAD
   repoclean = !git count-objects -v && git gc --aggressive && git prune && git fsck --full && git count-objects -v
   cm = commit -m
+  m = merge --no-ff 
