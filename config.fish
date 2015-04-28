@@ -21,6 +21,5 @@ alias bat="acpi -i"
 alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
-alias brewup="brew update; brew upgrade"
-alias yumup="yum -y update"
+alias brewup="brew update; brew upgrade --all"
 rvm default
