@@ -28,3 +28,4 @@
   cm = commit -m
   m = merge --no-ff 
   unadd = reset HEAD
+  goback = reset HEAD~1
