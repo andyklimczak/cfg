@@ -21,7 +21,5 @@ alias bat="acpi -i"
 alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
-alias brewup="brew update; brew upgrade --all"
-set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
+rvm default
