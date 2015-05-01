@@ -22,4 +22,6 @@ alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
 alias brewup="brew update; brew upgrade --all"
-rvm default
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
