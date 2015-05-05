@@ -29,3 +29,4 @@
   m = merge --no-ff 
   una = reset HEAD
   goback = reset HEAD~1
+  amend = commit --amend
