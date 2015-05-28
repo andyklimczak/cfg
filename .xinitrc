@@ -4,3 +4,5 @@ unclutter &
 #exec xmonad
 sxhkd &
 exec bspwm
+#exec openbox-session
+
