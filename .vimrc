@@ -68,7 +68,7 @@ set ttimeout
 set ttimeoutlen=1
 nmap k gk
 nmap j gj
-let g:ctrlp_map='<c-f>'
+let g:ctrlp_map='<c-p>'
 let g:ctrlp_max_height=30
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_match_window_reversed=0

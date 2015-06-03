@@ -12,4 +12,6 @@ bspc config focus_follows_pointer true
 bspc monitor DVI-I-1 -d 6 7 8 9 0
 bspc monitor DVI-I-0 -d 1 2 3 4 5
 
-bspc rule -a mumble floating-true
+bspc rule -a mumble floating=true
+
+xsetroot -cursor_name left_ptr

@@ -23,3 +23,5 @@ alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
+source ~/.config/fish/nvm-wrapper/nvm.fish
+set --export PATH $HOME/.nvm/versions/node/v0.12.4/bin $PATH
