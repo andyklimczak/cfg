@@ -96,4 +96,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 au FocusLost * silent! wa
-set dir=~/tmp
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
