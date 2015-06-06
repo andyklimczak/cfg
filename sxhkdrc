@@ -34,10 +34,10 @@ super + y
 super + m
 	bspc window -s biggest
 
-super + {_,shift + }{h,j,k,l}
+super + {_,ctrl+ }{h,j,k,l}
 	bspc window -{f,s} {left,down,up,right}
 
-super + {_,shift + }c
+super + {_,ctrl + }c
 	bspc window -f {next,prev}
 
 super + {comma,period}
@@ -46,7 +46,7 @@ super + {comma,period}
 super + bracket{left,right}
 	bspc desktop -f {prev,next}
 
-super + ctrl + {h,j,k,l}
+super + shift + {h,j,k,l}
 	bspc window -p {left,down,up,right}
 
 super + ctrl + {_,shift + }space
