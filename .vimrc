@@ -10,6 +10,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-ragtag'
+Plugin 'kien/rainbow_parentheses.vim'
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -98,3 +99,8 @@ let g:syntastic_check_on_wq = 0
 au FocusLost * silent! wa
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
