@@ -2,8 +2,6 @@
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-set fish_theme gnuykeaj
-set fish_plugins rvm
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
@@ -23,5 +21,5 @@ alias wifi="nmtui"
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
-source ~/.config/fish/nvm-wrapper/nvm.fish
-set --export PATH $HOME/.nvm/versions/node/v0.12.4/bin $PATH
+Theme "gnuykeaj"
+. /usr/share/fish/fry.fish
