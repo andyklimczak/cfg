@@ -13,13 +13,17 @@ set fish_path $HOME/.oh-my-fish
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-set fish_greeting ""
+set --erase fish_greeing
+
 set -x EDITOR "vim"
+set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
+
 alias vol="alsamixer"
 alias bat="acpi -i"
 alias wifi="nmtui"
-set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 alias pakup="pak -Syu --aur"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
+
 Theme "gnuykeaj"
+
 . /usr/share/fish/fry.fish
