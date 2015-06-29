@@ -11,6 +11,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-ragtag'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'heartsentwined/vim-emblem'
 call vundle#end()
 filetype plugin indent on
 syntax on
