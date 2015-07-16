@@ -17,7 +17,7 @@
   l = log --color --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   ds = diff --staged
   f = fetch -v --all
-  bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs -r git branch -d; }; f"
+  cleanup = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   r = rebase
   bd = branch -D
   wipeall = !git checkout -f && git clean -df
