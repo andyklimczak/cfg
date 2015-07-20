@@ -30,5 +30,6 @@
   una = reset HEAD
   goback = reset HEAD~1
   amend = commit --amend
+  listmerged = "!git branch --merged | grep -v '\\*'"
 [color]
 	ui = true
