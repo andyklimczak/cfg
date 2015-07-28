@@ -7,21 +7,19 @@ set fish_path $HOME/.oh-my-fish
 set --erase fish_greeing
 
 set -x EDITOR "vim"
+
 set -x LD_LIBRARY_PATH {LD_LIBRARY_PATH}:/usr/local/lib
 set -x NPM_PACKAGES /home/andy/.npm-packages
 set -x NODE_PATH $NPM_PACKGES/lib/node_modules:$NODE_PATH
 set -x PATH $NPM_PACKAGES/bin $PATH
 
+. /usr/local/share/fry/fry.fish
+
 
 alias vol="alsamixer"
 alias bat="acpi -i"
 alias wifi="nmtui"
-alias pakup="pak -Syu --aur"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
 
 Theme "gnuykeaj"
 
-Plugin "git-flow"
-Plugin "tmux"
-
-. /usr/share/fish/fry.fish
