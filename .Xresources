@@ -18,6 +18,8 @@ URxvt.scrollBar: false
 URxvt.font: xft:Input Mono Condensed:style=Regular:size=10,xft: Dejavu Sans Mono for Powerline:size=10
 URxvt.loginShell: true
 URxvt.letterSpace: -1
+URxvt.*transparent: true
+URxvt*.shading: 25
 !BLK Cursor
 #define _color0        #000d18
 #define _color8        #000d18
