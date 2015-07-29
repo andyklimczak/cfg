@@ -15,11 +15,9 @@ set -x PATH $NPM_PACKAGES/bin $PATH
 
 . /usr/local/share/fry/fry.fish
 
-
 alias vol="alsamixer"
 alias bat="acpi -i"
 alias wifi="nmtui"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
 
 Theme "gnuykeaj"
-
