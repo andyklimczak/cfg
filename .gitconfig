@@ -31,5 +31,6 @@
   goback = reset HEAD~1
   amend = commit --amend
   listmerged = "!git branch --merged | grep -v '\\*'"
+  ca = commit -a
 [color]
 	ui = true
