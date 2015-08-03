@@ -13,6 +13,11 @@ set -x NPM_PACKAGES /home/andy/.npm-packages
 set -x NODE_PATH $NPM_PACKGES/lib/node_modules:$NODE_PATH
 set -x PATH $NPM_PACKAGES/bin $PATH
 
+function updatevim
+    set -lx SHELL (which sh)
+    vim +BundleInstall! +BundleClean +qall
+end
+
 . /usr/local/share/fry/fry.fish
 
 alias vol="alsamixer"
