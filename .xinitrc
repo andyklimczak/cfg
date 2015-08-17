@@ -5,5 +5,5 @@ sxhkd -f 100 &
 nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUCurrentFanSpeed=75" &
 #exec startxfce4
 feh --randomize --bg-fill ~/.wallpaper/* &
-redshift -t 6500:2700 &
+redshift -t 6500:3400 -l 39:84 &
 exec bspwm

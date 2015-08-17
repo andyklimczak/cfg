@@ -4,7 +4,7 @@ set fish_path $HOME/.oh-my-fish
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-set --erase fish_greeing
+set --erase fish_greeting
 
 set -x EDITOR "vim"
 
