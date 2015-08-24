@@ -30,3 +30,6 @@ alias idm="mplayer http://pub7.di.fm/di_idm"
 
 
 Theme "gnuykeaj"
+
+Plugin 'tmux'
+Plugin 'git-flow'
