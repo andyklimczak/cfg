@@ -33,3 +33,4 @@ Theme "gnuykeaj"
 
 Plugin 'tmux'
 Plugin 'git-flow'
+Plugin 'fry'
