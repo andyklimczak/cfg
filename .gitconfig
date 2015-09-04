@@ -34,3 +34,5 @@
   ca = commit -a
 [color]
 	ui = true
+[core]
+	excludesfile = ~/.gitignore
