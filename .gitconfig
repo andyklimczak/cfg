@@ -32,7 +32,7 @@
   amend = commit --amend
   listmerged = "!git branch --merged | grep -v '\\*'"
   ca = commit -a
-  sps = !git stash && git p && git stash apply
+  stashup = !git stash && git p && git stash apply
 [color]
 	ui = true
 [core]
