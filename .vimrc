@@ -97,8 +97,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 au FocusLost * silent! wa
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swp//
+set backupdir=~/.vim//
+set directory=~/.vim//
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare

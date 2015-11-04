@@ -28,10 +28,3 @@ alias defcon="mplayer http://uwstream3.somafm.com:6200"
 alias ldnb="mplayer http://pub7.di.fm/di_liquiddnb"
 alias idm="mplayer http://pub7.di.fm/di_idm"
 alias epictrance="mplayer http://pub7.di.fm/di_epictrance"
-
-
-Theme "gnuykeaj"
-
-Plugin 'tmux'
-Plugin 'git-flow'
-Plugin 'fry'
