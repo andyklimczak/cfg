@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/andy/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+ volumeicon &
+ [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+ feh --randomize --bg-fill ~/.wallpaper/* &
+ redshift -t 6500:3400 -l 39:84 &
+ keepass &
+ owncloud &
+ steam &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/andy/.fluxbox/log"

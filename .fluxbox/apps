@@ -1,0 +1,17 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=Steam) (class=Steam)
+  [Workspace]	{1}
+[end]
+[app] (name=keepass2) (class=KeePass2)
+  [Position]	(UPPERLEFT)	{21% 2%}
+  [Close]	{yes}
+[end]
+[app] (name=urxvt) (class=URxvt)
+  [Dimensions]	{46% 83%}
+[end]
+[app] (name=mumble) (class=Mumble)
+  [Workspace]	{2}
+[end]
