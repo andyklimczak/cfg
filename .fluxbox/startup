@@ -14,7 +14,7 @@ xmodmap "/home/andy/.Xmodmap"
  [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
  feh --randomize --bg-fill ~/.wallpaper/* &
  redshift -t 6500:3400 -l 39:84 &
- keepass &
+ keepass -minimized &
  owncloud &
  steam &
 # wmnd &
