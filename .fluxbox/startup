@@ -13,10 +13,10 @@ xmodmap "/home/andy/.Xmodmap"
  volumeicon &
  [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
  feh --randomize --bg-fill ~/.wallpaper/* &
- redshift -t 6500:3400 -l 39:84 &
+ redshift -t 6500:2900 -l 39:-84 &
  keepass -minimized &
  owncloud &
- steam &
+ steam -silent &
 # wmnd &
 # wmsmixer -w &
 # idesk &

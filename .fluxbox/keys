@@ -25,7 +25,8 @@ OnRightGrip Move1 :StartResizing bottomright
 OnWindow Mod1 Mouse2 :Lower
 
 # control-click a window's titlebar and drag to attach windows
-OnTitlebar Control Mouse1 :StartTabbing
+#OnTitlebar Control Mouse1 :StartTabbing
+OnTitlebar Mouse2 :StartTabbing
 
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1 :Shade
@@ -65,7 +66,9 @@ Mod4 Shift Tab :PrevTab
 Mod4 Return :Exec urxvt
 
 # open a dialog to run programs
-Mod4 space :ExecCommand $(dmenu_path | dmenu -nb '#333333' -sb '#1E2320' -nf '#B3B3A1' -sf '#A3CACC')
+#Mod4 space :ExecCommand $(dmenu_path | dmenu -nb '#333333' -sb '#1E2320' -nf '#B3B3A1' -sf '#A3CACC')
+Mod4 space :Exec ~/config_files/dmenu.sh
+
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes

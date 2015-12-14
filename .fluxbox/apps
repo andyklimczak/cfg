@@ -6,7 +6,7 @@
   [Workspace]	{1}
 [end]
 [app] (name=keepass2) (class=KeePass2)
-  [Position]	(UPPERLEFT)	{24% 16%}
+  [Position]	(UPPERLEFT)	{10% 3%}
   [Close]	{yes}
 [end]
 [app] (name=urxvt) (class=URxvt)
@@ -14,4 +14,7 @@
 [end]
 [app] (name=mumble) (class=Mumble)
   [Workspace]	{2}
+[end]
+[app] (name=UDKGame-Linux) (class=UDKGame-Linux)
+  [Head]	{1}
 [end]
