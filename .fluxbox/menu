@@ -19,7 +19,6 @@
       [exec] (urxvt) {urxvt}
       [exec] (firefox) {firefox}
       [exec] (thunar) {thunar}
-      [exec] (mumble) {mumble}
     [submenu] (config)
         [config] (Configure)
       [submenu] (System Styles) {Choose a style...}
