@@ -1,0 +1,12 @@
+{
+    "fonts.fontSize": "12px",
+    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+    "styleActiveLine": true,
+    "themes.theme": "dark-theme",
+    "vimderbar.enabled": true,
+    "vimderbar.mappings": [
+        { "keys": "jk", "toKeys": "<Esc>", "mode": "insert" },
+        { "keys": "k", "toKeys": "gk", "mode": "normal" },
+        { "keys": "j", "toKeys": "gj", "mode": "normal" }
+    ]
+}
