@@ -10,7 +10,7 @@
   pup = push --set-upstream origin
   po = push origin
   s = status -sb
-  d = diff
+  d = diff --word-diff
   b = branch
   all = add -A
   lf = log --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)%an%C(reset)%n ''          %C(bold magenta)%s%C(reset) %C(white)%b%C(reset)'
@@ -23,7 +23,7 @@
   wipeall = !git checkout -f && git clean -df
   bl = for-each-ref --sort=-committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09"
   wipe = !git checkout -- . && git clean -df
-  dlast = diff HEAD^..HEAD
+  dlast = diff HEAD^
   repoclean = !git count-objects -v && git gc --aggressive && git prune && git fsck --full && git count-objects -v
   cm = commit -m
   m = merge --no-ff 
