@@ -9,7 +9,7 @@
   p = pull --rebase --prune
   pup = push --set-upstream origin
   po = push origin
-  s = status
+  s = status -s
   d = diff
   b = branch
   all = add -A
