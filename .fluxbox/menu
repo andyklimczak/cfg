@@ -17,7 +17,7 @@
 [begin] (fluxbox)
   [encoding] {UTF-8}
       [exec] (urxvt) {urxvt}
-      [exec] (firefox) {firefox}
+      [exec] (firefox) {firefox-beta}
       [exec] (thunar) {thunar}
     [submenu] (config)
         [config] (Configure)
