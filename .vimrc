@@ -11,6 +11,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-ragtag'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'mxw/vim-jsx'
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -47,6 +48,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-l> <C-W>l
 let g:airline_powerline_fonts=1
+let g:jsx_ext_required = 0
 set showcmd
 set laststatus=2
 if version >= 703
