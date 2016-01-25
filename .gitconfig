@@ -10,7 +10,7 @@
   pup = push --set-upstream origin
   po = push origin
   s = status -sb
-  d = diff --word-diff
+  d = diff
   b = branch
   all = add -A
   lf = log --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)%an%C(reset)%n ''          %C(bold magenta)%s%C(reset) %C(white)%b%C(reset)'
