@@ -9,9 +9,9 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-ragtag'
-"Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'mxw/vim-jsx'
+Plugin 'rking/ag.vim'
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -22,6 +22,8 @@ endif
 let g:mapleader=","
 nmap er :NERDTreeToggle<CR>
 nmap ef :NERDTreeFind<CR>
+nnoremap F :Ag<Space>
+nnoremap <C-f> :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
 set incsearch
 set ignorecase
 set smartcase
@@ -78,6 +80,7 @@ let g:ctrlp_match_window_reversed=0
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
   let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
+	let g:ctrlp_use_caching = 0
 endif
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
@@ -101,27 +104,4 @@ let g:syntastic_check_on_wq = 0
 au FocusLost * silent! wa
 set backupdir=~/.vim//
 set directory=~/.vim//
-"let g:rbpt_colorpairs = [
-    "\ ['brown',       'RoyalBlue3'],
-    "\ ['Darkblue',    'SeaGreen3'],
-    "\ ['darkgray',    'DarkOrchid3'],
-    "\ ['darkgreen',   'firebrick3'],
-    "\ ['darkcyan',    'RoyalBlue3'],
-    "\ ['darkred',     'SeaGreen3'],
-    "\ ['darkmagenta', 'DarkOrchid3'],
-    "\ ['brown',       'firebrick3'],
-    "\ ['gray',        'RoyalBlue3'],
-    "\ ['darkmagenta', 'DarkOrchid3'],
-    "\ ['Darkblue',    'firebrick3'],
-    "\ ['darkgreen',   'RoyalBlue3'],
-    "\ ['darkcyan',    'SeaGreen3'],
-    "\ ['darkred',     'DarkOrchid3'],
-    "\ ['red',         'firebrick3'],
-    "\ ]
-"let g:rbpt_max = 16
-"let g:rbpt_loadcmd_toggle = 0
-"au VimEnter * RainbowParenthesesToggle
-"au Syntax * RainbowParenthesesLoadRound
-"au Syntax * RainbowParenthesesLoadSquare
-"au Syntax * RainbowParenthesesLoadBraces
-"au Syntax * RainbowParenthesesLoadChevrons
+let g:ag_working_path_mode="r"
