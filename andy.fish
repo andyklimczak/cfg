@@ -1,9 +1,3 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
-
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
-
 set --erase fish_greeting
 
 set -x EDITOR "vim"
@@ -21,8 +15,6 @@ end
 . /usr/local/share/fry/fry.fish
 
 alias vol="alsamixer"
-alias bat="acpi -i"
-alias wifi="nmtui"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
 alias yaoup="yaourt -Syyua"
 alias weather="curl 'wttr.in?m'"
