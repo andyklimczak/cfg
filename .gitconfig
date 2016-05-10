@@ -1,8 +1,8 @@
 [user]
-	name = Andy Klimczak
-	email = andyklimczak@fastmail.com
+  name = Andy Klimczak
+  email = andyklimczak@fastmail.com
 [alias]
-	co = checkout
+  co = checkout
   cob = checkout -b
   c = commit
   a = add
@@ -33,9 +33,12 @@
   listmerged = "!git branch --merged | grep -v '\\*'"
   ca = commit -a
   stashup = !git stash && git p && git stash apply
+  svnwipe = !git clean -fd && git svn mkdirs 
 [color]
-	ui = true
+  ui = true
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [push]
-	default = simple
+  default = simple
+[svn]
+  rmdir = true
