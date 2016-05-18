@@ -71,8 +71,8 @@ imap <right> <nop>
 set noesckeys
 set ttimeout
 set ttimeoutlen=1
-nmap k gk
-nmap j gj
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_max_height=30
 let g:ctrlp_working_path_mode=0
@@ -80,7 +80,7 @@ let g:ctrlp_match_window_reversed=0
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
   let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
-	let g:ctrlp_use_caching = 0
+  let g:ctrlp_use_caching = 0
 endif
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
