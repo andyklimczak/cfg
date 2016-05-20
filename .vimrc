@@ -17,7 +17,7 @@ filetype plugin indent on
 syntax on
 colo xoria256
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
-  set t_Co=256
+	set t_Co=256
 endif
 let g:mapleader=","
 nmap er :NERDTreeToggle<CR>
@@ -54,11 +54,11 @@ let g:jsx_ext_required = 0
 set showcmd
 set laststatus=2
 if version >= 703
-  set relativenumber
-  au FocusLost * :set number
-  au FocusGained * :set relativenumber
-  autocmd InsertEnter * :set number
-  autocmd InsertLeave * :set relativenumber
+	set relativenumber
+	au FocusLost * :set number
+	au FocusGained * :set relativenumber
+	autocmd InsertEnter * :set number
+	autocmd InsertLeave * :set relativenumber
 endif
 map <up> <nop>
 map <down> <nop>
@@ -78,13 +78,13 @@ let g:ctrlp_max_height=30
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_match_window_reversed=0
 if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
-  let g:ctrlp_use_caching = 0
+	set grepprg=ag\ --nogroup\ --nocolor
+	let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
+	let g:ctrlp_use_caching = 0
 endif
 if version >= 700
-  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
+	au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
+	au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
 set autoread
 set clipboard=unnamed
@@ -105,3 +105,5 @@ au FocusLost * silent! wa
 set backupdir=~/.vim//
 set directory=~/.vim//
 let g:ag_working_path_mode="r"
+nnoremap <Tab> <C-W>w
+nnoremap <S-Tab> <C-W>W
