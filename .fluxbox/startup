@@ -17,6 +17,7 @@ xmodmap "/home/andy/.Xmodmap"
  keepass -minimized &
  owncloud &
  steam -silent &
+ xscreensaver --no-splash &
 # wmnd &
 # wmsmixer -w &
 # idesk &

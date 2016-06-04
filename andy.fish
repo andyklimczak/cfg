@@ -12,8 +12,6 @@ function updatevim
     vim +BundleInstall! +BundleClean +qall
 end
 
-. /usr/local/share/fry/fry.fish
-
 alias vol="alsamixer"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
 alias yaoup="yaourt -Syyua"

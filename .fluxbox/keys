@@ -67,8 +67,10 @@ Mod4 Return :Exec urxvt
 
 # open a dialog to run programs
 #Mod4 space :ExecCommand $(dmenu_path | dmenu -nb '#333333' -sb '#1E2320' -nf '#B3B3A1' -sf '#A3CACC')
-Mod4 space :Exec ~/config_files/dmenu.sh
+Mod4 space :Exec ~/cfg/dmenu.sh
 
+# lock desktop
+Mod4 L :Exec xscreensaver-command -lock
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
