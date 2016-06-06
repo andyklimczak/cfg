@@ -16,3 +16,4 @@ alias vol="alsamixer"
 alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; brew cask cleanup"
 alias yaoup="yaourt -Syyua"
 alias weather="curl 'wttr.in?m'"
+alias mux=tmuxinator
