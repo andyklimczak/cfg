@@ -94,6 +94,7 @@ nmap <silent> ./ :nohlsearch<CR>
 set visualbell
 set noerrorbells
 imap jk <Esc>
+imap Jk <Esc>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
