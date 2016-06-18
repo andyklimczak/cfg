@@ -34,6 +34,7 @@
   ca = commit -a
   stashup = !git stash && git p && git stash apply
   svnwipe = !git clean -fd && git svn mkdirs 
+	standup = !git log --since yesterday --pretty=short --author `git config user.email`
 [color]
   ui = true
 [core]
