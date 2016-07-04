@@ -30,7 +30,7 @@ session.screen0.tabs.usePixmap:	false
 session.screen0.tabs.maxOver:	false
 session.screen0.tabs.intitlebar:	true
 session.screen0.titlebar.left:	Close Minimize Maximize 
-session.screen0.titlebar.right:	
+session.screen0.titlebar.right:	Stick
 session.screen0.clickRaises:	true
 session.screen0.opaqueMove:	false
 session.screen0.maxDisableMove:	false

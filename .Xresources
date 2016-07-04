@@ -12,7 +12,7 @@ xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*eightBitInput: false
 
 URxvt.pointerBlank:true
-URxvt.cursorUnderline:1
+URxvt.cursorUnderline:0
 URxvt.scrollBar: false
 URxvt.font: xft:Input Mono Narrow:style=Regular:size=9,xft: DejaVu Sans Mono for Powerline:size=9:style=bold
 URxvt.loginShell: true
