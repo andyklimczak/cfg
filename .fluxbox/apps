@@ -6,7 +6,7 @@
   [Workspace]	{1}
 [end]
 [app] (name=keepass2) (class=KeePass2)
-  [Position]	(UPPERLEFT)	{15% 1%}
+  [Position]	(UPPERLEFT)	{22% 6%}
   [Close]	{yes}
 [end]
 [app] (name=urxvt) (class=URxvt)
