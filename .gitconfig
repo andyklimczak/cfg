@@ -4,7 +4,7 @@
 [alias]
   co = checkout
   cob = checkout -b
-  c = commit
+  c = commit -S
   a = add
   p = pull --rebase --prune
   pup = push --set-upstream origin
