@@ -4,7 +4,8 @@
 [alias]
   co = checkout
   cob = checkout -b
-  c = commit -S
+  cS = commit -S
+  c = commit
   a = add
   p = pull --rebase --prune
   pup = push --set-upstream origin
@@ -26,15 +27,15 @@
   dlast = diff HEAD^
   repoclean = !git count-objects -v && git gc --aggressive && git prune && git fsck --full && git count-objects -v
   cm = commit -m
-  m = merge --no-ff 
+  m = merge --no-ff
   una = reset HEAD
   goback = reset HEAD~1
   amend = commit --amend
   listmerged = "!git branch --merged | grep -v '\\*'"
   ca = commit -a
   stashup = !git stash && git p && git stash apply
-  svnwipe = !git clean -fd && git svn mkdirs 
-	standup = !git log --since yesterday --pretty=short --author `git config user.email`
+  svnwipe = !git clean -fd && git svn mkdirs
+  standup = !git log --since yesterday --pretty=short --author `git config user.email`
 [color]
   ui = true
 [core]

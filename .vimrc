@@ -35,6 +35,8 @@ nmap \q :nohlsearch<CR>
 set si
 set ai
 set wrap
+set linebreak
+set showbreak=>\ \ \
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -109,3 +111,4 @@ set directory=~/.vim//
 let g:ag_working_path_mode="r"
 nnoremap <Tab> <C-W>w
 nnoremap <S-Tab> <C-W>W
+autocmd BufWritePre * %s/\s\+$//e
