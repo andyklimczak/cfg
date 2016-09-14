@@ -114,3 +114,4 @@ let g:ag_working_path_mode="r"
 nnoremap <Tab> <C-W>w
 nnoremap <S-Tab> <C-W>W
 autocmd BufWritePre * %s/\s\+$//e
+let g:indentLine_color_term = 237
