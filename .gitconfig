@@ -48,3 +48,6 @@
   rmdir = true
 [diff]
   tool = vimdiff
+[color "diff"]
+  old = red strike
+  new = green italic

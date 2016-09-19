@@ -17,6 +17,7 @@ xmodmap "/home/andy/.Xmodmap"
  redshift -t 6500:2100 -l 39:-84 &
  owncloud &
  steam -silent &
+ thunar --daemon &
 # wmnd &
 # wmsmixer -w &
 # idesk &
