@@ -38,6 +38,7 @@
   svnwipe = !git clean -fd && git svn mkdirs
   standup = !git log --since yesterday --pretty=short --author `git config user.email`
   undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+  
 [color]
   ui = true
 [core]
