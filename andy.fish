@@ -17,6 +17,3 @@ alias brewup="brew update;brew cask update; brew upgrade --all; brew cleanup; br
 alias yaoup="yaourt -Syyua"
 alias weather="curl 'wttr.in?m'"
 alias mux="tmuxinator"
-
-set fish_key_bindings fish_user_key_bindings
-fish_vi_key_bindings
