@@ -17,3 +17,11 @@ alias brewup="brew update;brew cask update; brew upgrade; brew cleanup; brew cas
 alias yaoup="yaourt -Syyua"
 alias weather="curl 'wttr.in?m'"
 alias mux="tmuxinator"
+
+
+function my_vi_bindings
+  fish_vi_key_bindings
+  bind -M insert -m default jk backward-char force-repaint
+end
+
+set -g fish_key_bindings my_vi_bindings
