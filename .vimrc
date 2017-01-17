@@ -11,7 +11,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-ragtag'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 call vundle#end()
