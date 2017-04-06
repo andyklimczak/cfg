@@ -12,6 +12,11 @@ function updatevim
     vim +BundleInstall! +BundleClean +qall
 end
 
+function updatenvim
+    set -lx SHELL (which sh)
+    vim -v +PluginInstall +qall
+end
+
 alias vol="alsamixer"
 alias brewup="brew update; brew upgrade; brew cleanup; brew cask cleanup"
 alias yaoup="yaourt -Syyua"

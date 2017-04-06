@@ -30,7 +30,7 @@
   cm = commit -m
   m = merge --no-ff
   una = reset HEAD
-  goback = reset HEAD~1
+  undo = reset --soft HEAD^
   amend = commit --amend
   listmerged = "!git branch --merged | grep -v '\\*'"
   ca = commit -a
@@ -38,6 +38,7 @@
   svnwipe = !git clean -fd && git svn mkdirs
   standup = !git log --since yesterday --pretty=short --author `git config user.email`
   undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+  prune = fetch --prune
 
 [color]
   ui = true
@@ -45,6 +46,9 @@
   excludesfile = ~/.gitignore
 [push]
   default = simple
+  followTags = true
+[status]
+  showUntrackedFiles = all
 [svn]
   rmdir = true
 [diff]
@@ -53,23 +57,23 @@
   ;old = red strike
   ;new = green italic
 [color]
-    branch = auto
-    diff = auto
-    status = auto
+  branch = auto
+  diff = auto
+  status = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+  added = green
+  changed = red
+  untracked = cyan
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
 [mergetool]
-	prompt = false
+  prompt = false

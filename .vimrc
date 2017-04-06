@@ -14,6 +14,10 @@ Plugin 'sheerun/vim-polyglot'
 "Plugin 'mxw/vim-jsx'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'posva/vim-vue'
+Plugin 'valloric/youcompleteme'
+Plugin 'pangloss/vim-javascript'
+Plugin 'vim-ruby/vim-ruby'
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -115,3 +119,5 @@ nnoremap <Tab> <C-W>w
 nnoremap <S-Tab> <C-W>W
 autocmd BufWritePre * %s/\s\+$//e
 let g:indentLine_color_term = 237
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
