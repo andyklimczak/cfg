@@ -31,7 +31,7 @@
   m = merge --no-ff
   una = reset HEAD
   undo = reset --soft HEAD^
-  amend = commit --amend
+  amend = commit --amend --no-edit
   listmerged = "!git branch --merged | grep -v '\\*'"
   ca = commit -a
   stashup = !git stash && git p && git stash pop
