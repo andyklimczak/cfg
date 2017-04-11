@@ -15,7 +15,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'posva/vim-vue'
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
 call vundle#end()
