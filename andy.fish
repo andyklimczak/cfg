@@ -20,6 +20,7 @@ end
 alias vol="alsamixer"
 alias brewup="brew update; brew upgrade; brew cleanup; brew cask cleanup"
 alias yaoup="yaourt -Syyua"
+alias dnfup="sudo dnf upgrade --best --allowerasing -y"
 alias weather="curl 'wttr.in?m'"
 alias mux="tmuxinator"
 
