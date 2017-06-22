@@ -42,6 +42,8 @@
   standup = !git log --since yesterday --pretty=short --author `git config user.email`
   ;undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
   prune = fetch --prune
+  cf = commit --fixup
+  ri = rebase --interactive
 
 [color]
   ui = true
@@ -52,13 +54,12 @@
   followTags = true
 [status]
   showUntrackedFiles = all
+[fetch]
+  prune = true
 [svn]
   rmdir = true
 [diff]
   tool = vimdiff
-;[color "diff"]
-  ;old = red strike
-  ;new = green italic
 [color]
   branch = auto
   diff = auto
@@ -80,3 +81,5 @@
   conflictstyle = diff3
 [mergetool]
   prompt = false
+[rebase]
+  autosquash = true

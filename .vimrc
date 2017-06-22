@@ -62,13 +62,11 @@ let g:airline_powerline_fonts=1
 let g:jsx_ext_required = 0
 set showcmd
 set laststatus=2
-if version >= 703
-	set relativenumber
-	au FocusLost * :set number
-	au FocusGained * :set relativenumber
-	autocmd InsertEnter * :set number
-	autocmd InsertLeave * :set relativenumber
-endif
+set relativenumber
+au FocusLost * :set number
+au FocusGained * :set relativenumber
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
