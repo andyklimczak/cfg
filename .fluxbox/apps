@@ -24,3 +24,13 @@
 [app] (name=bioshock.i386) (class=bioshock.i386)
   [Head]	{1}
 [end]
+[app] (name=Mail) (class=Thunderbird) (role=3pane)
+  [Workspace]	{2}
+  [Head]	{1}
+[end]
+[app] (name=boostnote) (class=Boostnote) (role=browser-window)
+  [Position]	(UPPERLEFT)	{13% 10%}
+[end]
+[app] (name=discord) (class=discord) (role=browser-window)
+  [Workspace]	{1}
+[end]

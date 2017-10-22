@@ -76,6 +76,8 @@ Mod4 l :Exec xscreensaver-command -lock
 
 # KeeWeb
 Mod4 k :Exec KeeWeb
+# Boostnote
+Mod4 b :Exec boostnote
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
