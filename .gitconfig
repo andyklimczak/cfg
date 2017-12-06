@@ -34,7 +34,7 @@
   una = reset HEAD
   undo = reset --soft HEAD^
   amend = commit --amend --no-edit
-  amendm = commit --ammend
+  amendm = commit --amend
   listmerged = "!git branch --merged | grep -v '\\*'"
   ca = commit -a
   stashup = !git stash && git p && git stash pop
@@ -44,6 +44,7 @@
   prune = fetch --prune
   cf = commit --fixup
   ri = rebase --interactive
+  ls = log --stat
 
 [color]
   ui = true
@@ -83,3 +84,5 @@
   prompt = false
 [rebase]
   autosquash = true
+[help]
+	autoCorrect = 10
