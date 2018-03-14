@@ -25,7 +25,7 @@
   rs = rebase --autostash
   bd = branch -D
   wipeall = !git checkout -f && git clean -df
-  bl = for-each-ref --sort=-committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09"
+  bl = for-each-ref --sort=committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09"
   wipe = !git checkout -- . && git clean -df
   dlast = diff HEAD^
   repoclean = !git count-objects -v && git gc --aggressive && git prune && git fsck --full && git count-objects -v
