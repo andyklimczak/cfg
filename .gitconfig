@@ -45,6 +45,7 @@
   cf = commit --fixup
   ri = rebase --interactive
   ls = log --stat
+  col = checkout -
 
 [color]
   ui = true
