@@ -46,6 +46,7 @@
   ri = rebase --interactive
   ls = log --stat
   col = checkout -
+  cp = cherry-pick
 
 [color]
   ui = true
