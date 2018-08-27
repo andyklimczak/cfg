@@ -88,3 +88,5 @@
   autosquash = true
 [help]
 	autoCorrect = 10
+[rerere]
+	enabled = true

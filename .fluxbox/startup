@@ -15,7 +15,7 @@ xmodmap "/home/andy/.Xmodmap"
  [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
  feh --randomize --bg-fill ~/.wallpaper/* &
  redshift -t 6500:2100 -l 40.73061:-73.935242 &
- owncloud &
+ seafile-applet &
  steam -silent &
  thunar --daemon &
 # wmnd &
