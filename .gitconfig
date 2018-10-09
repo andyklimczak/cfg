@@ -74,7 +74,7 @@
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
-  old = red bold
+  old = red
   new = green bold
 [color "status"]
   added = green
