@@ -87,6 +87,6 @@
 [rebase]
   autosquash = true
 [help]
-	autoCorrect = 10
+  autoCorrect = 10
 [rerere]
-	enabled = true
+  enabled = true

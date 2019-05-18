@@ -25,9 +25,9 @@ alias weather="curl 'wttr.in?m'"
 alias mux="tmuxinator"
 
 
-function my_vi_bindings
-  fish_vi_key_bindings
-  bind -M insert -m default jk backward-char force-repaint
-end
+#function my_vi_bindings
+  #fish_vi_key_bindings
+  #bind -M insert -m default jk backward-char force-repaint
+#end
 
-set -g fish_key_bindings my_vi_bindings
+#set -g fish_key_bindings my_vi_bindings

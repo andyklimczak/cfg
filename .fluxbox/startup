@@ -16,7 +16,6 @@ xmodmap "/home/andy/.Xmodmap"
  feh --randomize --bg-fill ~/.wallpaper/* &
  redshift -t 6500:2100 -l 40.73061:-73.935242 &
  seafile-applet &
- steam -silent &
  thunar --daemon &
 # wmnd &
 # wmsmixer -w &
