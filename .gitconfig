@@ -63,6 +63,7 @@
   rmdir = true
 [diff]
   tool = vimdiff
+  algorithm = minimal
 [color]
   branch = auto
   diff = auto
