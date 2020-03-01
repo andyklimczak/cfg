@@ -49,7 +49,7 @@ set shiftwidth=2
 set expandtab
 set cursorline
 set showmatch
-set mouse=a
+set mouse=n
 set wildmenu
 set wildmode=list:longest,full
 hi CursorLine cterm=NONE

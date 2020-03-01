@@ -47,6 +47,7 @@
   ls = log --stat
   col = checkout -
   cp = cherry-pick
+  cc = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 
 [color]
   ui = true
@@ -90,4 +91,4 @@
 [help]
   autoCorrect = 10
 [rerere]
-  enabled = true
+	enabled = true
