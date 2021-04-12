@@ -23,6 +23,7 @@ alias yaoup="yaourt -Syyua"
 alias dnfup="sudo dnf upgrade --best --allowerasing -y"
 alias weather="curl 'wttr.in?m'"
 alias mux="tmuxinator"
+alias dpih="curl 'http://pihole/admin/api.php?disable=100&auth='"
 
 
 #function my_vi_bindings

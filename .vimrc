@@ -31,7 +31,7 @@ let g:mapleader=","
 nmap er :NERDTreeToggle<CR>
 nmap ef :NERDTreeFind<CR>
 :nnoremap K i<CR><Esc>
-nnoremap F :Ag<Space>
+"nnoremap F :Ag<Space>
 set incsearch
 set ignorecase
 set smartcase

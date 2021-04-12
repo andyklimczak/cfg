@@ -2,7 +2,7 @@ xterm*termName: xterm-256color
 xterm*loginShell: true
 !xterm*background: #1a1a1a
 !xterm*foreground: #00cc00
-xterm*faceSize: 9
+xterm*faceSize: 10
 
 !XTerm*faceName: Bitstream Vera Serif Mono
 !xterm*faceSize: 11
@@ -14,7 +14,7 @@ xterm*eightBitInput: false
 URxvt.pointerBlank:true
 URxvt.cursorUnderline:0
 URxvt.scrollBar: false
-URxvt.font: xft:Input Mono Condensed:style=Medium:size=9,xft: DejaVu Sans Mono for Powerline:size=9:style=bold
+URxvt.font: xft:Input Mono Condensed:style=Medium:size=10,xft: DejaVu Sans Mono for Powerline:size=10:style=bold
 URxvt.loginShell: true
 URxvt.letterSpace: -1
 URxvt.*transparent: true

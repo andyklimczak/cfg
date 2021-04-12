@@ -34,3 +34,13 @@
 [app] (name=discord) (class=discord) (role=browser-window)
   [Workspace]	{1}
 [end]
+[app] (name=lollypop) (class=Lollypop)
+  [Workspace]	{4}
+[end]
+[app] (name=shortwave) (class=Shortwave)
+  [Workspace]	{4}
+[end]
+[app] (name=audacious) (class=Audacious)
+  [Workspace]	{4}
+  [Head]	{1}
+[end]
