@@ -44,3 +44,11 @@
   [Workspace]	{4}
   [Head]	{1}
 [end]
+[app] (name=Navigator) (class=Firefox Beta) (role=browser)
+  [Head]	{2}
+  [Position]	(UPPERLEFT)	{0% 0%}
+[end]
+[app] (name=element) (class=Element) (role=browser-window)
+  [Workspace]	{1}
+  [Head]	{1}
+[end]
