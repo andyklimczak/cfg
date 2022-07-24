@@ -52,3 +52,6 @@
   [Workspace]	{1}
   [Head]	{1}
 [end]
+[app] (name=launcher-4) (class=launcher-4)
+  [Head]	{2}
+[end]
