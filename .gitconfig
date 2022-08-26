@@ -3,36 +3,36 @@
   email = andyklimczak@fastmail.com
 [alias]
   co = checkout
-  cob = checkout -b
+  cob = checkout -b ;checkout new branch
   cS = commit -S
   c = commit
   a = add
   p = pull --rebase --prune
-  pup = push --set-upstream origin
+  pup = push --set-upstream origin ;push up
   po = push origin
   s = status -sb
   d = diff
   dt = difftool
   b = branch
-  ap = add -p
-  all = add -A
-  lf = log --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)%an%C(reset)%n%C(bold magenta)%s%C(reset)%n%n%C(white)%b%C(reset)%n'
-  l = log --color --pretty=format:'%Cred%h%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset%C(yellow)%d%Creset %s ' --abbrev-commit
-  ds = diff --staged
+  ap = add -p ;add patch, pick the changes you want
+  all = add -A ;add all
+  lf = log --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)%an%C(reset)%n%C(bold magenta)%s%C(reset)%n%n%C(white)%b%C(reset)%n' ;log full
+  l = log --color --pretty=format:'%Cred%h%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset%C(yellow)%d%Creset %s ' --abbrev-commit ;log (short)
+  ds = diff --staged ;show diff for all staged files
   f = fetch -v --all
   cleanup = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   r = rebase
   rs = rebase --autostash
-  bd = branch -D
-  wipeall = !git checkout -f && git clean -df
-  bl = for-each-ref --sort=committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09"
-  wipe = !git checkout -- . && git clean -df
-  dlast = diff HEAD^
+  bd = branch -D ;branch delete
+  wipe = !git checkout -- . && git clean -df ;wipe all unstaged changes
+  wipeall = !git checkout -f && git clean -df ;wipe all changes (staged and unstaged)
+  bl = for-each-ref --sort=committerdate refs/heads/ --format="%(committerdate:short)%09%(authorname)%09%1B[0;33m%(refname:short)%1B[m%09" ;branch list
+  dlast = diff HEAD^ ;show diff of last commit
   repoclean = !git count-objects -v && git gc --aggressive && git prune && git fsck --full && git count-objects -v
   cm = commit -m
   m = merge --no-ff
-  una = reset HEAD
-  undo = reset --soft HEAD^
+  una = reset HEAD ;unstage a file: `git una main.rb`
+  undo = reset --soft HEAD^ ;undo last commit and stage changes
   amend = commit --amend --no-edit
   amendm = commit --amend
   listmerged = "!git branch --merged | grep -v '\\*'"
@@ -45,7 +45,7 @@
   cf = commit --fixup
   ri = rebase --interactive
   ls = log --stat
-  col = checkout -
+  col = checkout - ;check out last (branch)
   cp = cherry-pick
   cc = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 
