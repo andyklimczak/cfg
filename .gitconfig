@@ -89,6 +89,7 @@
   prompt = false
 [rebase]
   autosquash = true
+	updateRefs = true
 [help]
   autoCorrect = 10
 [rerere]
