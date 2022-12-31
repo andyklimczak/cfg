@@ -64,9 +64,9 @@ Mod4 Shift Tab :PrevTab
 
 # open a terminal
 #Mod4 Return :Exec urxvt
-Mod4 Return :Exec xfce4-terminal
+Mod4 Return :Exec konsole
 # open thunar
-Mod4 Shift Return :Exec thunar
+Mod4 Shift Return :Exec dolphin
 
 # open a dialog to run programs
 #Mod4 space :ExecCommand $(dmenu_path | dmenu -nb '#333333' -sb '#1E2320' -nf '#B3B3A1' -sf '#A3CACC')
@@ -76,7 +76,7 @@ Mod4 space :Exec ~/cfg/rofi.sh
 Mod4 l :Exec xscreensaver-command -lock
 
 # KeeWeb
-Mod4 k :Exec KeeWeb
+Mod4 k :Exec keeweb --disable-gpu-sandbox
 # Boostnote
 Mod4 b :Exec boostnote
 
