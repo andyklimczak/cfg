@@ -59,3 +59,6 @@
   [Workspace]	{2}
   [Head]	{1}
 [end]
+[app] (name=csgo_linux64) (class=csgo_linux64)
+  [Position]	(UPPERLEFT)	{0% -2%}
+[end]

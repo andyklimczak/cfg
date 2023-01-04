@@ -66,7 +66,7 @@ Mod4 Shift Tab :PrevTab
 #Mod4 Return :Exec urxvt
 Mod4 Return :Exec konsole
 # open thunar
-Mod4 Shift Return :Exec dolphin
+Mod4 Shift Return :Exec dolphin ~
 
 # open a dialog to run programs
 #Mod4 space :ExecCommand $(dmenu_path | dmenu -nb '#333333' -sb '#1E2320' -nf '#B3B3A1' -sf '#A3CACC')
