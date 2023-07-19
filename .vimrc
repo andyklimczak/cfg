@@ -20,6 +20,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
 "Plugin 'w0rp/ale'
 Plugin 'chaimleib/vim-renpy'
+Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 filetype plugin indent on
 syntax on
