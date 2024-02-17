@@ -65,7 +65,7 @@
   rmdir = true
 [diff]
   tool = vimdiff
-  algorithm = minimal
+  algorithm = histogram
 [color]
   branch = auto
   diff = auto
@@ -84,7 +84,7 @@
   changed = red
   untracked = cyan
 [merge]
-  conflictstyle = diff3
+  conflictstyle = zdiff3
 [mergetool]
   prompt = false
 [rebase]
@@ -94,3 +94,5 @@
   autoCorrect = 10
 [rerere]
 	enabled = true
+[credential]
+	helper = store

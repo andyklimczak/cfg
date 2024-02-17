@@ -33,6 +33,7 @@
 [end]
 [app] (name=discord) (class=discord) (role=browser-window)
   [Workspace]	{1}
+  [Position]	(UPPERLEFT)	{14% 18%}
 [end]
 [app] (name=lollypop) (class=Lollypop)
   [Workspace]	{4}
@@ -60,5 +61,9 @@
   [Head]	{1}
 [end]
 [app] (name=csgo_linux64) (class=csgo_linux64)
-  [Position]	(UPPERLEFT)	{0% -2%}
+[end]
+[app] (name=konsole) (class=konsole) (role=MainWindow#1)
+  [Position]	(UPPERLEFT)	{35% 14%}
+[end]
+[app] (name=steamwebhelper) (class=steam)
 [end]

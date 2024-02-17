@@ -82,8 +82,8 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=1
 "ideaVim ignore
-"noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-"noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 "ideaVim ignore end
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_max_height=30

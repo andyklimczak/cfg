@@ -17,6 +17,7 @@ xmodmap "/home/andy/.Xmodmap"
  redshift -t 6500:2100 -l 40.73061:-73.935242 &
  seafile-applet &
  thunar --daemon &
+ dunst &
 # wmnd &
 # wmsmixer -w &
 # idesk &
