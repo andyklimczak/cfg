@@ -61,11 +61,16 @@
   showUntrackedFiles = all
 [fetch]
   prune = true
+  pruneTags = true
+  all = true
 [svn]
   rmdir = true
 [diff]
   tool = vimdiff
   algorithm = histogram
+	coorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [color]
   branch = auto
   diff = auto
@@ -88,11 +93,17 @@
 [mergetool]
   prompt = false
 [rebase]
-  autosquash = true
+  autoSquash = true
 	updateRefs = true
+  autoStash = true
 [help]
   autoCorrect = 10
+[tag]
+	sort = version:refname
+[commit]
+	diff = true
 [rerere]
 	enabled = true
+	autoupdate = true
 [credential]
 	helper = store
