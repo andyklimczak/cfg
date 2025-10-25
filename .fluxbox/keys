@@ -64,9 +64,9 @@ Mod4 Shift Tab :PrevTab
 
 # open a terminal
 #Mod4 Return :Exec urxvt
-Mod4 Return :Exec konsole
+Mod4 Return :Exec alacritty
 # open thunar
-Mod4 Shift Return :Exec dolphin
+Mod4 Shift Return :Exec thunar
 # screenshot
 Mod1 Shift 3 :Exec scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 

@@ -125,3 +125,4 @@ autocmd BufWritePre * %s/\s\+$//e
 let g:indentLine_color_term = 237
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
+set clipboard+=unnamedplus

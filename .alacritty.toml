@@ -1,0 +1,11 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/dark_pastels.toml"
+    ]
+
+[window]
+dimensions = { columns = 85, lines = 46 }
+
+[font]
+normal={family = "Input Mono Condensed", style="Regular" }
+size=10

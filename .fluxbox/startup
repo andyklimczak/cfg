@@ -10,17 +10,24 @@ xmodmap "/home/andy/.Xmodmap"
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 #
- xscreensaver &
- pasystray &
- [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
- feh --randomize --bg-fill ~/.wallpaper/* &
- redshift -t 6500:2100 -l 40.73061:-73.935242 &
- seafile-applet &
- thunar --daemon &
- dunst &
+xscreensaver &
+pasystray &
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+feh --randomize --bg-fill ~/.wallpaper/* &
+redshift -t 6500:2100 -l 40.73061:-73.935242 &
+seafile-applet &
+thunar --daemon &
+/usr/lib/xdg-desktop-portal-gtk &
+dunst &
+udiskie &
 # wmnd &
 # wmsmixer -w &
 # idesk &
+steam &
+discord &
+thunderbird &
+firefox-beta &
+fcitx &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

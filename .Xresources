@@ -2,7 +2,7 @@ xterm*termName: xterm-256color
 xterm*loginShell: true
 !xterm*background: #1a1a1a
 !xterm*foreground: #00cc00
-xterm*faceSize: 10
+xterm*faceSize: 14
 
 !XTerm*faceName: Bitstream Vera Serif Mono
 !xterm*faceSize: 11
