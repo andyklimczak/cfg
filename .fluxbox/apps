@@ -24,10 +24,6 @@
 [app] (name=bioshock.i386) (class=bioshock.i386)
   [Head]	{1}
 [end]
-[app] (name=Mail) (class=Thunderbird) (role=3pane)
-  [Workspace]	{2}
-  [Head]	{1}
-[end]
 [app] (name=boostnote) (class=Boostnote) (role=browser-window)
   [Position]	(UPPERLEFT)	{13% 10%}
 [end]
@@ -56,10 +52,6 @@
 [app] (name=launcher-4) (class=launcher-4)
   [Head]	{2}
 [end]
-[app] (name=Mail) (class=thunderbird) (role=3pane)
-  [Workspace]	{2}
-  [Head]	{1}
-[end]
 [app] (name=csgo_linux64) (class=csgo_linux64)
 [end]
 [app] (name=konsole) (class=konsole) (role=MainWindow#1)
@@ -67,4 +59,9 @@
 [end]
 [app] (name=steamwebhelper) (class=steam)
   [Workspace]	{1}
+[end]
+[app] (name=Mail) (class=org.mozilla.Thunderbird) (role=3pane)
+  [Workspace]	{2}
+  [Head]	{1}
+  [Position]	(UPPERLEFT)	{100% 3%}
 [end]
